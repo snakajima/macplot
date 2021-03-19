@@ -15,7 +15,6 @@ class PythonScript: ObservableObject {
         let sys = Python.import("sys")
         sys.path.append("/Users/satoshi/git/mm/macplot/macplot")
         let sample = Python.import("sample")
-        print(sample)
-        sample.main()
+        sample.main("/Users/satoshi/git/mm/macplot/macplot/plot2.png")
     }
 }
