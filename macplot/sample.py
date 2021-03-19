@@ -9,4 +9,6 @@ def main():
     plt.xlabel("angle")
     plt.ylabel("Tan value")
     plt.title('Tan wave')
-    plt.show()
+    plt.savefig('/Users/satoshi/git/mm/macplot/macplot/plot.png')
+    # plt.show()
+    # fig = plt.figure()
