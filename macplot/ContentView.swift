@@ -8,9 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var pythonScript = PythonScript()
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            TextEditor(text: $pythonScript.script)
+            Button(action: {
+                print("script=", pythonScript.script)
+            }, label: {
+                Text("Run")
+            })
+        }
     }
 }
 
