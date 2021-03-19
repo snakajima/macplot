@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,7 @@
 		74BDA96726054F1E00CD6427 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDA96626054F1E00CD6427 /* ContentView.swift */; };
 		74BDA96926054F2400CD6427 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74BDA96826054F2400CD6427 /* Assets.xcassets */; };
 		74BDA96C26054F2400CD6427 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74BDA96B26054F2400CD6427 /* Preview Assets.xcassets */; };
+		74BDA9782605515700CD6427 /* PythonKit in Frameworks */ = {isa = PBXBuildFile; productRef = 74BDA9772605515700CD6427 /* PythonKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74BDA9782605515700CD6427 /* PythonKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +89,9 @@
 			dependencies = (
 			);
 			name = macplot;
+			packageProductDependencies = (
+				74BDA9772605515700CD6427 /* PythonKit */,
+			);
 			productName = macplot;
 			productReference = 74BDA96126054F1E00CD6427 /* macplot.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 74BDA95826054F1E00CD6427;
+			packageReferences = (
+				74BDA9762605515700CD6427 /* XCRemoteSwiftPackageReference "PythonKit" */,
+			);
 			productRefGroup = 74BDA96226054F1E00CD6427 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -333,6 +341,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		74BDA9762605515700CD6427 /* XCRemoteSwiftPackageReference "PythonKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pvieito/PythonKit";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		74BDA9772605515700CD6427 /* PythonKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 74BDA9762605515700CD6427 /* XCRemoteSwiftPackageReference "PythonKit" */;
+			productName = PythonKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 74BDA95926054F1E00CD6427 /* Project object */;
 }
