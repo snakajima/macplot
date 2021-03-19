@@ -13,7 +13,7 @@ struct ContentView: View {
         VStack {
             TextEditor(text: $pythonScript.script)
             Button(action: {
-                print("script=", pythonScript.script)
+                pythonScript.run()
             }, label: {
                 Text("Run")
             })

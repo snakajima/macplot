@@ -13,6 +13,7 @@
 		74BDA96C26054F2400CD6427 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74BDA96B26054F2400CD6427 /* Preview Assets.xcassets */; };
 		74BDA9782605515700CD6427 /* PythonKit in Frameworks */ = {isa = PBXBuildFile; productRef = 74BDA9772605515700CD6427 /* PythonKit */; };
 		74BDA97C260551F900CD6427 /* PythonScript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDA97B260551F900CD6427 /* PythonScript.swift */; };
+		74BDA981260562A500CD6427 /* sample.py in Resources */ = {isa = PBXBuildFile; fileRef = 74BDA980260562A500CD6427 /* sample.py */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		74BDA96D26054F2400CD6427 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74BDA96E26054F2400CD6427 /* macplot.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macplot.entitlements; sourceTree = "<group>"; };
 		74BDA97B260551F900CD6427 /* PythonScript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PythonScript.swift; sourceTree = "<group>"; };
+		74BDA980260562A500CD6427 /* sample.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = sample.py; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				74BDA96D26054F2400CD6427 /* Info.plist */,
 				74BDA96E26054F2400CD6427 /* macplot.entitlements */,
 				74BDA96A26054F2400CD6427 /* Preview Content */,
+				74BDA980260562A500CD6427 /* sample.py */,
 			);
 			path = macplot;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			files = (
 				74BDA96C26054F2400CD6427 /* Preview Assets.xcassets in Resources */,
 				74BDA96926054F2400CD6427 /* Assets.xcassets in Resources */,
+				74BDA981260562A500CD6427 /* sample.py in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
