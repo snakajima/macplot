@@ -10,4 +10,4 @@ def main():
 
     plt.xlabel("Time")
     plt.ylabel("Amplitude")
-    plt.title("Decaying Sin Wave")
+    plt.title("Decaying Sin Wave with another Sin Wave")
