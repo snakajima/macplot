@@ -10,13 +10,18 @@ import SwiftUI
 struct ContentView: View {
     @StateObject var pythonScript = PythonScript()
     var body: some View {
-        VStack {
-            TextEditor(text: $pythonScript.script)
-            Button(action: {
-                pythonScript.run()
-            }, label: {
-                Text("Run")
-            })
+        HStack {
+            VStack {
+                TextEditor(text: $pythonScript.script)
+                Button(action: {
+                    pythonScript.run()
+                }, label: {
+                    Text("Run")
+                })
+            }
+            if let image = pythonScript.image {
+                Image(nsImage: image)
+            }
         }
     }
 }
