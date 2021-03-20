@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		74BDA96526054F1E00CD6427 /* macplotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDA96426054F1E00CD6427 /* macplotApp.swift */; };
-		74BDA96726054F1E00CD6427 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDA96626054F1E00CD6427 /* ContentView.swift */; };
+		74BDA96726054F1E00CD6427 /* ScriptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDA96626054F1E00CD6427 /* ScriptView.swift */; };
 		74BDA96926054F2400CD6427 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74BDA96826054F2400CD6427 /* Assets.xcassets */; };
 		74BDA96C26054F2400CD6427 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74BDA96B26054F2400CD6427 /* Preview Assets.xcassets */; };
 		74BDA9782605515700CD6427 /* PythonKit in Frameworks */ = {isa = PBXBuildFile; productRef = 74BDA9772605515700CD6427 /* PythonKit */; };
@@ -21,7 +21,7 @@
 /* Begin PBXFileReference section */
 		74BDA96126054F1E00CD6427 /* macplot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = macplot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74BDA96426054F1E00CD6427 /* macplotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = macplotApp.swift; sourceTree = "<group>"; };
-		74BDA96626054F1E00CD6427 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		74BDA96626054F1E00CD6427 /* ScriptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptView.swift; sourceTree = "<group>"; };
 		74BDA96826054F2400CD6427 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74BDA96B26054F2400CD6427 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		74BDA96D26054F2400CD6427 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -64,7 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				74BDA96426054F1E00CD6427 /* macplotApp.swift */,
-				74BDA96626054F1E00CD6427 /* ContentView.swift */,
+				74BDA96626054F1E00CD6427 /* ScriptView.swift */,
 				74BDA97A260551E200CD6427 /* Models */,
 				74BDA96826054F2400CD6427 /* Assets.xcassets */,
 				74BDA96D26054F2400CD6427 /* Info.plist */,
@@ -179,7 +179,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74BDA96726054F1E00CD6427 /* ContentView.swift in Sources */,
+				74BDA96726054F1E00CD6427 /* ScriptView.swift in Sources */,
 				74BDA96526054F1E00CD6427 /* macplotApp.swift in Sources */,
 				74BDA97C260551F900CD6427 /* PythonScript.swift in Sources */,
 			);

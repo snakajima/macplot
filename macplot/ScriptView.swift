@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct ScriptView: View {
     @StateObject var pythonScript = PythonScript(name: "sample")
     var body: some View {
         HStack {
@@ -35,6 +35,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ScriptView()
     }
 }
