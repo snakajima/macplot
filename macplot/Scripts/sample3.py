@@ -10,6 +10,6 @@ def main():
     y = np.exp(-np.power((x - average)/sd,2)/2) / (sd * np.sqrt(2 * math.pi))
     plt.bar(x,y,1)
 
-    plt.xlabel("Time")
-    plt.ylabel("Amplitude")
+    plt.xlabel("Score")
+    plt.ylabel("Probabiilty")
     plt.title("Normal Disribution")
