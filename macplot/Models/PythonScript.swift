@@ -11,12 +11,12 @@ import AppKit
 
 class PythonScript: ObservableObject {
     let tempURL = URL(fileURLWithPath: NSTemporaryDirectory())
-    let imageURL = URL(fileURLWithPath: "/Users/satoshi/git/mm/macplot/macplot/plot2.png")
+    let imageURL: URL
     @Published var script: String = ""
     @Published var image: NSImage?
     
     init() {
-        //imageURL = tempURL.appendingPathComponent("plot.png")
+        imageURL = tempURL.appendingPathComponent("plot.png")
         if let url = Bundle.main.url(forResource: "sample", withExtension: "py") {
             script = (try? String(contentsOf: url, encoding: .utf8)) ?? ""
         }
