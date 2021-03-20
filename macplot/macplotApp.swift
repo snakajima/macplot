@@ -12,13 +12,8 @@ struct macplotApp: App {
     @StateObject var settings = Settings()
     var body: some Scene {
         WindowGroup {
-            NavigationView {
-                List {
-                    NavigationLink("Sample 1", destination: ScriptView(name: "sample"))
-                    NavigationLink("Sample 2", destination: ScriptView(name: "sample2"))
-                }
-            }
-            .environmentObject(settings)
+            ContentView()
+                .environmentObject(settings)
         }
     }
 }

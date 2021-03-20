@@ -18,6 +18,7 @@
 		74BDA98A260611A600CD6427 /* savefig.py in Resources */ = {isa = PBXBuildFile; fileRef = 74BDA989260611A600CD6427 /* savefig.py */; };
 		74BDA98E2606195900CD6427 /* sample2.py in Resources */ = {isa = PBXBuildFile; fileRef = 74BDA98D2606195900CD6427 /* sample2.py */; };
 		74BDA99526061B5F00CD6427 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDA99426061B5F00CD6427 /* Settings.swift */; };
+		74BDA99C2606826100CD6427 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDA99B2606826100CD6427 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		74BDA989260611A600CD6427 /* savefig.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = savefig.py; sourceTree = "<group>"; };
 		74BDA98D2606195900CD6427 /* sample2.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = sample2.py; sourceTree = "<group>"; };
 		74BDA99426061B5F00CD6427 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		74BDA99B2606826100CD6427 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				74BDA96426054F1E00CD6427 /* macplotApp.swift */,
+				74BDA99B2606826100CD6427 /* ContentView.swift */,
 				74BDA96626054F1E00CD6427 /* ScriptView.swift */,
 				74BDA97A260551E200CD6427 /* Models */,
 				74BDA96826054F2400CD6427 /* Assets.xcassets */,
@@ -187,6 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				74BDA96726054F1E00CD6427 /* ScriptView.swift in Sources */,
+				74BDA99C2606826100CD6427 /* ContentView.swift in Sources */,
 				74BDA96526054F1E00CD6427 /* macplotApp.swift in Sources */,
 				74BDA99526061B5F00CD6427 /* Settings.swift in Sources */,
 				74BDA97C260551F900CD6427 /* PythonScript.swift in Sources */,
