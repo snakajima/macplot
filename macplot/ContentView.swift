@@ -15,6 +15,7 @@ struct Sample: Identifiable {
 let samples = [
     Sample(id: "sample", title: "Decaying Sin Wave"),
     Sample(id: "sample2", title: "Decaying Sin Wave with another Sin Wave"),
+    Sample(id: "sample3", title: "Normal Distribution"),
 ]
 
 struct ContentView: View {
