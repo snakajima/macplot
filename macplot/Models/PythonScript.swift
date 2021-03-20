@@ -11,6 +11,12 @@ import PythonKit
 class PythonScript: ObservableObject {
     @Published var script:String = ""
     
+    init() {
+        if let url = Bundle.main.url(forResource: "sample", withExtension: "py") {
+            script = (try? String(contentsOf: url, encoding: .utf8)) ?? ""
+        }
+    }
+    
     func run() {
         let sys = Python.import("sys")
         sys.path.append("/Users/satoshi/git/mm/macplot/macplot")
