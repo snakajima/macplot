@@ -11,7 +11,12 @@ import SwiftUI
 struct macplotApp: App {
     var body: some Scene {
         WindowGroup {
-            ScriptView()
+            NavigationView {
+                List {
+                    NavigationLink("Sample 1", destination: ScriptView())
+                    NavigationLink("Sample 2", destination: ScriptView())
+                }
+            }
         }
     }
 }
