@@ -7,13 +7,24 @@
 
 import SwiftUI
 
+struct Sample: Identifiable {
+    let id: String
+    let title: String
+}
+
+let samples = [
+    Sample(id: "sample", title: "Sample 1"),
+    Sample(id: "sample2", title: "Sample 2"),
+]
+
 struct ContentView: View {
     @EnvironmentObject var settings: Settings
     var body: some View {
         NavigationView {
             List {
-                NavigationLink("Sample 1", destination: ScriptView(name: "sample"))
-                NavigationLink("Sample 2", destination: ScriptView(name: "sample2"))
+                ForEach(samples) {
+                    NavigationLink($0.title, destination: ScriptView(name: $0.id))
+                }
             }
         }
         .environmentObject(settings)
