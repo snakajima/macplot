@@ -12,8 +12,8 @@ import AppKit
 class PythonScript: ObservableObject {
     let tempURL = URL(fileURLWithPath: NSTemporaryDirectory())
     let imageURL: URL
-    let clear: PythonObject?
-    //let savefig: PythonObject?
+    let clear: PythonObject
+    let savefig: PythonObject
     @Published var script: String = ""
     @Published var errorMsg: String? = nil
     @Published var image: NSImage? = nil
@@ -24,7 +24,8 @@ class PythonScript: ObservableObject {
         if let url = Bundle.main.url(forResource: "sample", withExtension: "py") {
             script = (try? String(contentsOf: url, encoding: .utf8)) ?? ""
         }
-        clear = Self.load("clear")
+        clear = Self.load("clear")!
+        savefig = Self.load("savefig")!
     }
     
     static func load(_ name: String) -> PythonObject? {
@@ -44,13 +45,14 @@ class PythonScript: ObservableObject {
         let filename = UUID().uuidString
         let url = tempURL.appendingPathComponent("\(filename).py")
         do {
-            if let clear = clear, shouldClear {
+            if shouldClear {
                 clear.main()
             }
             try script.write(to: url, atomically: true, encoding: .utf8)
             sys.path.append(tempURL.path)
             let sample = try Python.attemptImport(filename)
-            try sample.main.throwing.dynamicallyCall(withArguments: [imageURL.path])
+            try sample.main.throwing.dynamicallyCall(withArguments: [])
+            savefig.main(imageURL.path)
             image = NSImage(contentsOfFile: imageURL.path)
             errorMsg = nil
         } catch {
