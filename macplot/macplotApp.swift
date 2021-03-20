@@ -13,8 +13,8 @@ struct macplotApp: App {
         WindowGroup {
             NavigationView {
                 List {
-                    NavigationLink("Sample 1", destination: ScriptView())
-                    NavigationLink("Sample 2", destination: ScriptView())
+                    NavigationLink("Sample 1", destination: ScriptView(name: "sample"))
+                    NavigationLink("Sample 2", destination: ScriptView(name: "sample2"))
                 }
             }
         }
