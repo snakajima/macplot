@@ -13,26 +13,30 @@ class PythonScript: ObservableObject {
     let tempURL = URL(fileURLWithPath: NSTemporaryDirectory())
     let imageURL: URL
     let clear: PythonObject?
+    //let savefig: PythonObject?
     @Published var script: String = ""
     @Published var errorMsg: String? = nil
     @Published var image: NSImage? = nil
     @Published var shouldClear: Bool = true
     
     init() {
-        let sys = Python.import("sys")
         imageURL = tempURL.appendingPathComponent("plot.png")
         if let url = Bundle.main.url(forResource: "sample", withExtension: "py") {
             script = (try? String(contentsOf: url, encoding: .utf8)) ?? ""
         }
-        if let url = Bundle.main.url(forResource: "clear", withExtension: "py") {
-            var components = url.pathComponents
-            components.removeLast()
-            let path = components.joined(separator: "/")
-            sys.path.append(path)
-            clear = Python.import("clear")
-        } else {
-            clear = nil
+        clear = Self.load("clear")
+    }
+    
+    static func load(_ name: String) -> PythonObject? {
+        guard let url = Bundle.main.url(forResource: name, withExtension: "py") else {
+            return nil
         }
+        var components = url.pathComponents
+        components.removeLast()
+        let path = components.joined(separator: "/")
+        let sys = Python.import("sys")
+        sys.path.append(path)
+        return Python.import(name)
     }
     
     func run() {
