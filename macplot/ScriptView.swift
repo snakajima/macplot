@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ScriptView: View {
     @StateObject var pythonScript: PythonScript
+    @EnvironmentObject var settings: Settings
     
     init(name: String) {
         let script = PythonScript(name: name)
@@ -20,11 +21,11 @@ struct ScriptView: View {
                 TextEditor(text: $pythonScript.script)
                 HStack {
                     Button(action: {
-                        pythonScript.run()
+                        pythonScript.run(clear: settings.shouldClear)
                     }, label: {
                         Text("Plot")
                     })
-                    Toggle("Clear", isOn: $pythonScript.shouldClear)
+                    Toggle("Clear", isOn: $settings.shouldClear)
                 }
                 if let errorMsg = pythonScript.errorMsg {
                     Text(errorMsg)

@@ -9,6 +9,7 @@ import SwiftUI
 
 @main
 struct macplotApp: App {
+    @StateObject var settings = Settings()
     var body: some Scene {
         WindowGroup {
             NavigationView {
@@ -17,6 +18,7 @@ struct macplotApp: App {
                     NavigationLink("Sample 2", destination: ScriptView(name: "sample2"))
                 }
             }
+            .environmentObject(settings)
         }
     }
 }

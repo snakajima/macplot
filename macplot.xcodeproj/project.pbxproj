@@ -17,6 +17,7 @@
 		74BDA9872605AE1800CD6427 /* clear.py in Resources */ = {isa = PBXBuildFile; fileRef = 74BDA9862605AE1800CD6427 /* clear.py */; };
 		74BDA98A260611A600CD6427 /* savefig.py in Resources */ = {isa = PBXBuildFile; fileRef = 74BDA989260611A600CD6427 /* savefig.py */; };
 		74BDA98E2606195900CD6427 /* sample2.py in Resources */ = {isa = PBXBuildFile; fileRef = 74BDA98D2606195900CD6427 /* sample2.py */; };
+		74BDA99526061B5F00CD6427 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDA99426061B5F00CD6427 /* Settings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		74BDA9862605AE1800CD6427 /* clear.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = clear.py; sourceTree = "<group>"; };
 		74BDA989260611A600CD6427 /* savefig.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = savefig.py; sourceTree = "<group>"; };
 		74BDA98D2606195900CD6427 /* sample2.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = sample2.py; sourceTree = "<group>"; };
+		74BDA99426061B5F00CD6427 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				74BDA97B260551F900CD6427 /* PythonScript.swift */,
+				74BDA99426061B5F00CD6427 /* Settings.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 			files = (
 				74BDA96726054F1E00CD6427 /* ScriptView.swift in Sources */,
 				74BDA96526054F1E00CD6427 /* macplotApp.swift in Sources */,
+				74BDA99526061B5F00CD6427 /* Settings.swift in Sources */,
 				74BDA97C260551F900CD6427 /* PythonScript.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

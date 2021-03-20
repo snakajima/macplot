@@ -17,7 +17,6 @@ class PythonScript: ObservableObject {
     @Published var script: String = ""
     @Published var errorMsg: String? = nil
     @Published var image: NSImage? = nil
-    @Published var shouldClear: Bool = true
     
     init(name: String) {
         imageURL = tempURL.appendingPathComponent("plot.png")
@@ -40,13 +39,13 @@ class PythonScript: ObservableObject {
         return Python.import(name)
     }
     
-    func run() {
+    func run(clear: Bool) {
         let sys = Python.import("sys")
         let filename = UUID().uuidString
         let url = tempURL.appendingPathComponent("\(filename).py")
         do {
-            if shouldClear {
-                clear.main()
+            if clear {
+                self.clear.main()
             }
             try script.write(to: url, atomically: true, encoding: .utf8)
             sys.path.append(tempURL.path)
