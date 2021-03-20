@@ -13,7 +13,8 @@ class PythonScript: ObservableObject {
     let tempURL = URL(fileURLWithPath: NSTemporaryDirectory())
     let imageURL: URL
     @Published var script: String = ""
-    @Published var image: NSImage?
+    @Published var errorMsg: String? = nil
+    @Published var image: NSImage? = nil
     
     init() {
         imageURL = tempURL.appendingPathComponent("plot.png")
@@ -29,11 +30,14 @@ class PythonScript: ObservableObject {
         do {
             try script.write(to: url, atomically: true, encoding: .utf8)
             sys.path.append(tempURL.path)
-            let sample = Python.import(filename)
-            sample.main(imageURL.path)
+            let sample = try Python.attemptImport(filename)
+            try sample.main.throwing.dynamicallyCall(withArguments: [imageURL.path])
             image = NSImage(contentsOfFile: imageURL.path)
+            errorMsg = nil
         } catch {
-            print("error saving file")
+            if let pyError = error as? PythonError {
+                errorMsg = pyError.description
+            }
         }
     }
 }

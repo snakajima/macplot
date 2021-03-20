@@ -18,6 +18,10 @@ struct ContentView: View {
                 }, label: {
                     Text("Plot")
                 })
+                if let errorMsg = pythonScript.errorMsg {
+                    Text(errorMsg)
+                        .foregroundColor(.pink)
+                }
             }
             if let image = pythonScript.image {
                 Image(nsImage: image)

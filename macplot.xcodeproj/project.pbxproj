@@ -25,7 +25,7 @@
 		74BDA96D26054F2400CD6427 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74BDA96E26054F2400CD6427 /* macplot.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macplot.entitlements; sourceTree = "<group>"; };
 		74BDA97B260551F900CD6427 /* PythonScript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PythonScript.swift; sourceTree = "<group>"; };
-		74BDA980260562A500CD6427 /* sample.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = sample.py; sourceTree = "<group>"; };
+		74BDA980260562A500CD6427 /* sample.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = sample.py; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
