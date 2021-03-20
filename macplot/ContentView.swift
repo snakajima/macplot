@@ -13,11 +13,14 @@ struct ContentView: View {
         HStack {
             VStack {
                 TextEditor(text: $pythonScript.script)
-                Button(action: {
-                    pythonScript.run()
-                }, label: {
-                    Text("Plot")
-                })
+                HStack {
+                    Button(action: {
+                        pythonScript.run()
+                    }, label: {
+                        Text("Plot")
+                    })
+                    Toggle("Clear", isOn: $pythonScript.shouldClear)
+                }
                 if let errorMsg = pythonScript.errorMsg {
                     Text(errorMsg)
                         .foregroundColor(.pink)

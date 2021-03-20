@@ -16,6 +16,7 @@ class PythonScript: ObservableObject {
     @Published var script: String = ""
     @Published var errorMsg: String? = nil
     @Published var image: NSImage? = nil
+    @Published var shouldClear: Bool = true
     
     init() {
         let sys = Python.import("sys")
@@ -39,7 +40,7 @@ class PythonScript: ObservableObject {
         let filename = UUID().uuidString
         let url = tempURL.appendingPathComponent("\(filename).py")
         do {
-            if let clear = clear {
+            if let clear = clear, shouldClear {
                 clear.main()
             }
             try script.write(to: url, atomically: true, encoding: .utf8)
