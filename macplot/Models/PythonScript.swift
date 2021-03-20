@@ -10,6 +10,7 @@ import PythonKit
 import AppKit
 
 class PythonScript: ObservableObject {
+    let name: String
     let tempURL = URL(fileURLWithPath: NSTemporaryDirectory())
     let imageURL: URL
     let clear: PythonObject
@@ -19,12 +20,16 @@ class PythonScript: ObservableObject {
     @Published var image: NSImage? = nil
     
     init(name: String) {
+        self.name = name
         imageURL = tempURL.appendingPathComponent("plot.png")
+        clear = Self.load("clear")!
+        savefig = Self.load("savefig")!
+    }
+    
+    func load() {
         if let url = Bundle.main.url(forResource: name, withExtension: "py") {
             script = (try? String(contentsOf: url, encoding: .utf8)) ?? ""
         }
-        clear = Self.load("clear")!
-        savefig = Self.load("savefig")!
     }
     
     static func load(_ name: String) -> PythonObject? {

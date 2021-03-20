@@ -41,6 +41,10 @@ struct ScriptView: View {
                         .foregroundColor(.pink)
                 }
             }
+            .onAppear {
+                pythonScript.load()
+                pythonScript.run(clear: settings.shouldClear)
+            }
             if let image = pythonScript.image {
                 VStack {
                     Image(nsImage: image)
