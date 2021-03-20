@@ -7,6 +7,15 @@
 
 import SwiftUI
 
+// HACK to work-around the smart quote issue
+extension NSTextView {
+    open override var frame: CGRect {
+        didSet {
+            self.isAutomaticQuoteSubstitutionEnabled = false
+        }
+    }
+}
+
 struct ScriptView: View {
     @StateObject var pythonScript: PythonScript
     @EnvironmentObject var settings: Settings
@@ -33,7 +42,19 @@ struct ScriptView: View {
                 }
             }
             if let image = pythonScript.image {
-                Image(nsImage: image)
+                VStack {
+                    Image(nsImage: image)
+                    HStack {
+                        Button {
+                            let pb = NSPasteboard.general
+                            pb.clearContents()
+                            pb.writeObjects([image])
+                        } label: {
+                            Text("Copy")
+                        }.disabled(pythonScript.image == nil)
+
+                    }
+                }
             }
         }
     }
