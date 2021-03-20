@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject var pythonScript = PythonScript()
+    @StateObject var pythonScript = PythonScript(name: "sample")
     var body: some View {
         HStack {
             VStack {

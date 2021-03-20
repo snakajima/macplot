@@ -19,9 +19,9 @@ class PythonScript: ObservableObject {
     @Published var image: NSImage? = nil
     @Published var shouldClear: Bool = true
     
-    init() {
+    init(name: String) {
         imageURL = tempURL.appendingPathComponent("plot.png")
-        if let url = Bundle.main.url(forResource: "sample", withExtension: "py") {
+        if let url = Bundle.main.url(forResource: name, withExtension: "py") {
             script = (try? String(contentsOf: url, encoding: .utf8)) ?? ""
         }
         clear = Self.load("clear")!
