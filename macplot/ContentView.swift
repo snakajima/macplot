@@ -16,7 +16,7 @@ struct ContentView: View {
                 Button(action: {
                     pythonScript.run()
                 }, label: {
-                    Text("Run")
+                    Text("Draw")
                 })
             }
             if let image = pythonScript.image {
