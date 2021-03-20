@@ -14,6 +14,7 @@
 		74BDA9782605515700CD6427 /* PythonKit in Frameworks */ = {isa = PBXBuildFile; productRef = 74BDA9772605515700CD6427 /* PythonKit */; };
 		74BDA97C260551F900CD6427 /* PythonScript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDA97B260551F900CD6427 /* PythonScript.swift */; };
 		74BDA981260562A500CD6427 /* sample.py in Resources */ = {isa = PBXBuildFile; fileRef = 74BDA980260562A500CD6427 /* sample.py */; };
+		74BDA9872605AE1800CD6427 /* clear.py in Resources */ = {isa = PBXBuildFile; fileRef = 74BDA9862605AE1800CD6427 /* clear.py */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		74BDA96E26054F2400CD6427 /* macplot.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macplot.entitlements; sourceTree = "<group>"; };
 		74BDA97B260551F900CD6427 /* PythonScript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PythonScript.swift; sourceTree = "<group>"; };
 		74BDA980260562A500CD6427 /* sample.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = sample.py; sourceTree = "<group>"; };
+		74BDA9862605AE1800CD6427 /* clear.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = clear.py; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +68,7 @@
 				74BDA96D26054F2400CD6427 /* Info.plist */,
 				74BDA96E26054F2400CD6427 /* macplot.entitlements */,
 				74BDA96A26054F2400CD6427 /* Preview Content */,
-				74BDA980260562A500CD6427 /* sample.py */,
+				74BDA9842605ADFD00CD6427 /* Scripts */,
 			);
 			path = macplot;
 			sourceTree = "<group>";
@@ -85,6 +87,15 @@
 				74BDA97B260551F900CD6427 /* PythonScript.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		74BDA9842605ADFD00CD6427 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				74BDA980260562A500CD6427 /* sample.py */,
+				74BDA9862605AE1800CD6427 /* clear.py */,
+			);
+			path = Scripts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +163,7 @@
 			files = (
 				74BDA96C26054F2400CD6427 /* Preview Assets.xcassets in Resources */,
 				74BDA96926054F2400CD6427 /* Assets.xcassets in Resources */,
+				74BDA9872605AE1800CD6427 /* clear.py in Resources */,
 				74BDA981260562A500CD6427 /* sample.py in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -12,6 +12,7 @@ import AppKit
 class PythonScript: ObservableObject {
     let tempURL = URL(fileURLWithPath: NSTemporaryDirectory())
     let imageURL: URL
+    let sys = Python.import("sys")
     @Published var script: String = ""
     @Published var errorMsg: String? = nil
     @Published var image: NSImage? = nil
@@ -24,7 +25,6 @@ class PythonScript: ObservableObject {
     }
     
     func run() {
-        let sys = Python.import("sys")
         let filename = UUID().uuidString
         let url = tempURL.appendingPathComponent("\(filename).py")
         do {
