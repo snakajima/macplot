@@ -4,6 +4,7 @@ import numpy as np
 import math #needed for definition of pi
 
 def main():
+    # this sample data is from https://youtu.be/nKxLfUrkLE8
     ages_x = [25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35]
     x_indexes = np.arange(len(ages_x))
     width = 0.25
