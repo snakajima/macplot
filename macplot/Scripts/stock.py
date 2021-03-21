@@ -7,17 +7,15 @@ import urllib2
 
 def main():
     symbol = "TSLA"
-    start = 1584794842
-    length = 365 * 24 * 60 * 60
+    start = 18342 # days from 12/31/1969
+    length = 365
     params = {
-        "period1": str(start),
-        "period2": str(start + length),
+        "period1": str(start  * 24 * 60 * 60),
+        "period2": str((start + length) * 24 * 60 * 60),
         "interval": "1wk",
         "includeAdjustedClose": "true"
     }
     query = "&".join(map(lambda key: "=".join([key, params[key]]), params))
-    print(1584794842 / 24 / 60 / 60)
-
     url = "https://query1.finance.yahoo.com/v7/finance/download/"
     response = urllib2.urlopen(url + symbol + "?" + query)
     cr = csv.DictReader(response)
