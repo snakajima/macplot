@@ -19,10 +19,11 @@ def main():
                 56373, 62375, 66674, 68745, 68746, 74583]
     plt.bar(x_indexes + width, js_dev_y, width=width, color="#e5ae38", label="JavaScript")
 
-    plt.legend()
+    plt.legend(bbox_to_anchor=(0.3, 0.98))
     plt.xticks(x_indexes, ages_x)
     plt.title("Median Salary (USD) by Age")
     plt.xlabel("Ages")
     plt.ylabel("Median Salary (USD)")
 
     plt.tight_layout()
+    
