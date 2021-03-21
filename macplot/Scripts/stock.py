@@ -6,8 +6,18 @@ import csv
 import urllib2
 
 def main():
-    url = 'https://query1.finance.yahoo.com/v7/finance/download/TSLA?period1=1584794842&period2=1616330842&interval=1wk&events=history&includeAdjustedClose=true'
-    response = urllib2.urlopen(url)
+    symbol = "TSLA"
+    params = {
+        "period1": "1584794842",
+        "period2": "1616330842",
+        "interval": "1wk",
+        "includeAdjustedClose": "true"
+    }
+    query = "&".join(map(lambda key: "=".join([key, params[key]]), params))
+    print(query)
+
+    url = "https://query1.finance.yahoo.com/v7/finance/download/"
+    response = urllib2.urlopen(url + symbol + "?" + query)
     cr = csv.DictReader(response)
     rows = map(lambda x: x, cr)
     
@@ -16,5 +26,6 @@ def main():
     ticks = filter(lambda x: x % 5 == 0, indeces)
     plt.xticks(ticks, map(lambda x: rows[x]["Date"], ticks), rotation=30, ha='right')
     plt.plot(indeces, closes)
-    plt.title("Historical Stock Price: TSLA")
+    plt.title("Historical Stock Price: " + symbol)
+
     
