@@ -18,6 +18,7 @@ let samples = [
     Sample(id: "sample3", title: "Normal Distribution"),
     Sample(id: "circle", title: "Circle"),
     Sample(id: "flower", title: "Flower"),
+    Sample(id: "piechart", title: "Pie Chart"),
 ]
 
 struct ContentView: View {

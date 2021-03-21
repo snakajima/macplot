@@ -22,6 +22,7 @@
 		74BDA99F26069BCE00CD6427 /* sample3.py in Resources */ = {isa = PBXBuildFile; fileRef = 74BDA99E26069BCE00CD6427 /* sample3.py */; };
 		74BDA9A22606E05A00CD6427 /* circle.py in Resources */ = {isa = PBXBuildFile; fileRef = 74BDA9A12606E05A00CD6427 /* circle.py */; };
 		74BDA9A52606E21400CD6427 /* flower.py in Resources */ = {isa = PBXBuildFile; fileRef = 74BDA9A42606E21400CD6427 /* flower.py */; };
+		74BDA9A82606E50100CD6427 /* piechart.py in Resources */ = {isa = PBXBuildFile; fileRef = 74BDA9A72606E50100CD6427 /* piechart.py */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		74BDA99E26069BCE00CD6427 /* sample3.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = sample3.py; sourceTree = "<group>"; };
 		74BDA9A12606E05A00CD6427 /* circle.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = circle.py; sourceTree = "<group>"; };
 		74BDA9A42606E21400CD6427 /* flower.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = flower.py; sourceTree = "<group>"; };
+		74BDA9A72606E50100CD6427 /* piechart.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = piechart.py; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				74BDA99E26069BCE00CD6427 /* sample3.py */,
 				74BDA9A12606E05A00CD6427 /* circle.py */,
 				74BDA9A42606E21400CD6427 /* flower.py */,
+				74BDA9A72606E50100CD6427 /* piechart.py */,
 				74BDA989260611A600CD6427 /* savefig.py */,
 				74BDA9862605AE1800CD6427 /* clear.py */,
 			);
@@ -186,6 +189,7 @@
 				74BDA96926054F2400CD6427 /* Assets.xcassets in Resources */,
 				74BDA9A22606E05A00CD6427 /* circle.py in Resources */,
 				74BDA9A52606E21400CD6427 /* flower.py in Resources */,
+				74BDA9A82606E50100CD6427 /* piechart.py in Resources */,
 				74BDA9872605AE1800CD6427 /* clear.py in Resources */,
 				74BDA99F26069BCE00CD6427 /* sample3.py in Resources */,
 				74BDA981260562A500CD6427 /* sample.py in Resources */,
