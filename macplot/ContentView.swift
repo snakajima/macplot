@@ -16,6 +16,8 @@ let samples = [
     Sample(id: "sample", title: "Decaying Sin Wave"),
     Sample(id: "sample2", title: "Decaying Sin Wave with another Sin Wave"),
     Sample(id: "sample3", title: "Normal Distribution"),
+    Sample(id: "circle", title: "Circle"),
+    Sample(id: "flower", title: "Flower"),
 ]
 
 struct ContentView: View {

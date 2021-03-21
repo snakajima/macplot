@@ -20,6 +20,8 @@
 		74BDA99526061B5F00CD6427 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDA99426061B5F00CD6427 /* Settings.swift */; };
 		74BDA99C2606826100CD6427 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDA99B2606826100CD6427 /* ContentView.swift */; };
 		74BDA99F26069BCE00CD6427 /* sample3.py in Resources */ = {isa = PBXBuildFile; fileRef = 74BDA99E26069BCE00CD6427 /* sample3.py */; };
+		74BDA9A22606E05A00CD6427 /* circle.py in Resources */ = {isa = PBXBuildFile; fileRef = 74BDA9A12606E05A00CD6427 /* circle.py */; };
+		74BDA9A52606E21400CD6427 /* flower.py in Resources */ = {isa = PBXBuildFile; fileRef = 74BDA9A42606E21400CD6427 /* flower.py */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		74BDA99426061B5F00CD6427 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		74BDA99B2606826100CD6427 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		74BDA99E26069BCE00CD6427 /* sample3.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = sample3.py; sourceTree = "<group>"; };
+		74BDA9A12606E05A00CD6427 /* circle.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = circle.py; sourceTree = "<group>"; };
+		74BDA9A42606E21400CD6427 /* flower.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = flower.py; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,8 @@
 				74BDA980260562A500CD6427 /* sample.py */,
 				74BDA98D2606195900CD6427 /* sample2.py */,
 				74BDA99E26069BCE00CD6427 /* sample3.py */,
+				74BDA9A12606E05A00CD6427 /* circle.py */,
+				74BDA9A42606E21400CD6427 /* flower.py */,
 				74BDA989260611A600CD6427 /* savefig.py */,
 				74BDA9862605AE1800CD6427 /* clear.py */,
 			);
@@ -178,6 +184,8 @@
 			files = (
 				74BDA96C26054F2400CD6427 /* Preview Assets.xcassets in Resources */,
 				74BDA96926054F2400CD6427 /* Assets.xcassets in Resources */,
+				74BDA9A22606E05A00CD6427 /* circle.py in Resources */,
+				74BDA9A52606E21400CD6427 /* flower.py in Resources */,
 				74BDA9872605AE1800CD6427 /* clear.py in Resources */,
 				74BDA99F26069BCE00CD6427 /* sample3.py in Resources */,
 				74BDA981260562A500CD6427 /* sample.py in Resources */,
