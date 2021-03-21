@@ -10,11 +10,11 @@ def main():
     response = urllib2.urlopen(url)
     cr = csv.DictReader(response)
     rows = map(lambda x: x, cr)
-    dates = map(lambda x: x["Date"], rows)
+    
     closes = map(lambda x: x["Close"], rows)
-    indeces = np.arange(len(dates))
+    indeces = np.arange(len(closes))
     ticks = filter(lambda x: x % 5 == 0, indeces)
-    plt.xticks(ticks, map(lambda x: dates[x], ticks), rotation=30, ha='right')
+    plt.xticks(ticks, map(lambda x: rows[x]["Date"], ticks), rotation=30, ha='right')
     plt.plot(indeces, closes)
     plt.title("Historical Stock Price: TSLA")
     
