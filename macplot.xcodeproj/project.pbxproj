@@ -26,6 +26,7 @@
 		74BDA9AB260772A700CD6427 /* salaries.py in Resources */ = {isa = PBXBuildFile; fileRef = 74BDA9AA260772A700CD6427 /* salaries.py */; };
 		74BDA9AE260799E500CD6427 /* stock.py in Resources */ = {isa = PBXBuildFile; fileRef = 74BDA9AD260799E500CD6427 /* stock.py */; };
 		74BDA9B12608272B00CD6427 /* poisson.py in Resources */ = {isa = PBXBuildFile; fileRef = 74BDA9B02608272B00CD6427 /* poisson.py */; };
+		74BDA9B4260841B300CD6427 /* b-spline.py in Resources */ = {isa = PBXBuildFile; fileRef = 74BDA9B3260841B300CD6427 /* b-spline.py */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		74BDA9AA260772A700CD6427 /* salaries.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = salaries.py; sourceTree = "<group>"; };
 		74BDA9AD260799E500CD6427 /* stock.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = stock.py; sourceTree = "<group>"; };
 		74BDA9B02608272B00CD6427 /* poisson.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = poisson.py; sourceTree = "<group>"; };
+		74BDA9B3260841B300CD6427 /* b-spline.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = "b-spline.py"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				74BDA98D2606195900CD6427 /* sample2.py */,
 				74BDA99E26069BCE00CD6427 /* sample3.py */,
 				74BDA9A12606E05A00CD6427 /* circle.py */,
+				74BDA9B3260841B300CD6427 /* b-spline.py */,
 				74BDA9AA260772A700CD6427 /* salaries.py */,
 				74BDA9AD260799E500CD6427 /* stock.py */,
 				74BDA9B02608272B00CD6427 /* poisson.py */,
@@ -196,6 +199,7 @@
 			files = (
 				74BDA96C26054F2400CD6427 /* Preview Assets.xcassets in Resources */,
 				74BDA9AB260772A700CD6427 /* salaries.py in Resources */,
+				74BDA9B4260841B300CD6427 /* b-spline.py in Resources */,
 				74BDA96926054F2400CD6427 /* Assets.xcassets in Resources */,
 				74BDA9A22606E05A00CD6427 /* circle.py in Resources */,
 				74BDA9A52606E21400CD6427 /* flower.py in Resources */,
