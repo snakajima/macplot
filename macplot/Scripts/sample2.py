@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from matplotlib import pyplot as plt
 import numpy as np
-import math #needed for definition of pi
+import math
 
 def main():
     x = np.arange(0, math.pi * 2 * 7, 0.05)
