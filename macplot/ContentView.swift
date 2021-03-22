@@ -21,6 +21,7 @@ let samples = [
     Sample(id: "piechart", title: "Pie Chart"),
     Sample(id: "salaries", title: "Median Salary (USD) by Age"),
     Sample(id: "stock", title: "Historical Stock Price: TSLA"),
+    Sample(id: "poisson", title: "Poisson Distribution"),
 ]
 
 struct ContentView: View {
