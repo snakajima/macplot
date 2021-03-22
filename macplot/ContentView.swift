@@ -24,7 +24,7 @@ let samples = [
     Sample(id: "poisson", title: "Poisson Distribution"),
     Sample(id: "b-spline", title: "B-Spline"),
     Sample(id: "julia", title: "Julia Fractal"), // NOTE: Does not look good
-    // Sample(id: "mandelbrot", title: "Mandelbrot Fractal"), // NOTE: Fails with overflow at z = z ** 2 + c
+    Sample(id: "mandelbrot", title: "Mandelbrot Fractal"), 
 ]
 
 struct ContentView: View {
