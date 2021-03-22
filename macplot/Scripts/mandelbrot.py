@@ -12,7 +12,4 @@ def main():
     z = reduce(lambda x, y: x**2 + c, [1] * iterations, c)
 
     plt.figure(figsize=(10, 10))
-    plt.imshow(np.angle(z));
-
-    plt.figure(figsize=(10, 10))
-    plt.imshow(np.log(np.abs(z)));
+    plt.imshow(np.abs(z));
