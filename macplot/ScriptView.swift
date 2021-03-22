@@ -48,6 +48,7 @@ struct ScriptView: View {
             if let image = pythonScript.image {
                 VStack {
                     Image(nsImage: image)
+                        .resizable().aspectRatio (contentMode:.fit)
                     HStack {
                         Button {
                             let pb = NSPasteboard.general
