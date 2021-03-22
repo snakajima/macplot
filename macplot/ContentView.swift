@@ -26,6 +26,7 @@ let samples = [
     Sample(id: "julia", title: "Julia Fractal"), // NOTE: Does not look good
     Sample(id: "mandelbrot", title: "Mandelbrot Fractal"), 
     Sample(id: "random", title: "Random Walk"),
+    Sample(id: "fern", title: "Barnsley Fern"),
 ]
 
 struct ContentView: View {
