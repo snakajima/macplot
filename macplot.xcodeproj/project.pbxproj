@@ -30,6 +30,7 @@
 		74BDA9B72608464F00CD6427 /* julia.py in Resources */ = {isa = PBXBuildFile; fileRef = 74BDA9B62608464F00CD6427 /* julia.py */; };
 		74BDA9BA26084B4100CD6427 /* mandelbrot.py in Resources */ = {isa = PBXBuildFile; fileRef = 74BDA9B926084B4100CD6427 /* mandelbrot.py */; };
 		74BDA9BD2608558600CD6427 /* mandelbrot2.py in Resources */ = {isa = PBXBuildFile; fileRef = 74BDA9BC2608558600CD6427 /* mandelbrot2.py */; };
+		74BDA9C12608EF6900CD6427 /* random.py in Resources */ = {isa = PBXBuildFile; fileRef = 74BDA9C02608EF6900CD6427 /* random.py */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		74BDA9B62608464F00CD6427 /* julia.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = julia.py; sourceTree = "<group>"; };
 		74BDA9B926084B4100CD6427 /* mandelbrot.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = mandelbrot.py; sourceTree = "<group>"; };
 		74BDA9BC2608558600CD6427 /* mandelbrot2.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = mandelbrot2.py; sourceTree = "<group>"; };
+		74BDA9C02608EF6900CD6427 /* random.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = random.py; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 				74BDA98D2606195900CD6427 /* sample2.py */,
 				74BDA99E26069BCE00CD6427 /* sample3.py */,
 				74BDA9A12606E05A00CD6427 /* circle.py */,
+				74BDA9C02608EF6900CD6427 /* random.py */,
 				74BDA9A42606E21400CD6427 /* flower.py */,
 				74BDA9B62608464F00CD6427 /* julia.py */,
 				74BDA9B926084B4100CD6427 /* mandelbrot.py */,
@@ -207,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				74BDA96C26054F2400CD6427 /* Preview Assets.xcassets in Resources */,
+				74BDA9C12608EF6900CD6427 /* random.py in Resources */,
 				74BDA9AB260772A700CD6427 /* salaries.py in Resources */,
 				74BDA9B4260841B300CD6427 /* b-spline.py in Resources */,
 				74BDA96926054F2400CD6427 /* Assets.xcassets in Resources */,
