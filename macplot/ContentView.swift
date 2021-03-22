@@ -23,6 +23,7 @@ let samples = [
     Sample(id: "stock", title: "Historical Stock Price: TSLA"),
     Sample(id: "poisson", title: "Poisson Distribution"),
     Sample(id: "b-spline", title: "B-Spline"),
+    Sample(id: "julia", title: "Julia Fractal"),
 ]
 
 struct ContentView: View {
