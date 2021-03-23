@@ -12,7 +12,7 @@ def main():
     params = {
         "period1": str((today - length)  * 24 * 60 * 60),
         "period2": str(today * 24 * 60 * 60),
-        "interval": "1wk",
+        "interval": "1d", # or 1wk
         "includeAdjustedClose": "true"
     }
     query = "&".join(map(lambda key: "=".join([key, params[key]]), params))
