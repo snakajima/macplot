@@ -62,6 +62,8 @@
 		74BDA9BC2608558600CD6427 /* mandelbrot2.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = mandelbrot2.py; sourceTree = "<group>"; };
 		74BDA9C02608EF6900CD6427 /* random.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = random.py; sourceTree = "<group>"; };
 		74BDA9C32608F08500CD6427 /* fern.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = fern.py; sourceTree = "<group>"; };
+		74BDA9C62609496C00CD6427 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		74BDA9C72609497400CD6427 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,8 @@
 		74BDA95826054F1E00CD6427 = {
 			isa = PBXGroup;
 			children = (
+				74BDA9C62609496C00CD6427 /* README.md */,
+				74BDA9C72609497400CD6427 /* LICENSE */,
 				74BDA96326054F1E00CD6427 /* macplot */,
 				74BDA96226054F1E00CD6427 /* Products */,
 			);
