@@ -21,6 +21,7 @@ let samples = [
     Sample(id: "piechart", title: "Pie Chart"),
     Sample(id: "salaries", title: "Median Salary (USD) by Age"),
     Sample(id: "stock", title: "Historical Stock Price: TSLA"),
+    Sample(id: "stocks", title: "Compare Historical Stock Price"),
     Sample(id: "poisson", title: "Poisson Distribution"),
     Sample(id: "b-spline", title: "B-Spline"),
     Sample(id: "julia", title: "Julia Fractal"), // NOTE: Does not look good

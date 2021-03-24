@@ -32,6 +32,7 @@
 		74BDA9BD2608558600CD6427 /* mandelbrot2.py in Resources */ = {isa = PBXBuildFile; fileRef = 74BDA9BC2608558600CD6427 /* mandelbrot2.py */; };
 		74BDA9C12608EF6900CD6427 /* random.py in Resources */ = {isa = PBXBuildFile; fileRef = 74BDA9C02608EF6900CD6427 /* random.py */; };
 		74BDA9C42608F08500CD6427 /* fern.py in Resources */ = {isa = PBXBuildFile; fileRef = 74BDA9C32608F08500CD6427 /* fern.py */; };
+		74BDA9D1260BAE5700CD6427 /* stocks.py in Resources */ = {isa = PBXBuildFile; fileRef = 74BDA9D0260BAE5700CD6427 /* stocks.py */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		74BDA9C32608F08500CD6427 /* fern.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = fern.py; sourceTree = "<group>"; };
 		74BDA9C62609496C00CD6427 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		74BDA9C72609497400CD6427 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		74BDA9D0260BAE5700CD6427 /* stocks.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = stocks.py; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 				74BDA9B3260841B300CD6427 /* b-spline.py */,
 				74BDA9AA260772A700CD6427 /* salaries.py */,
 				74BDA9AD260799E500CD6427 /* stock.py */,
+				74BDA9D0260BAE5700CD6427 /* stocks.py */,
 				74BDA9B02608272B00CD6427 /* poisson.py */,
 				74BDA9A72606E50100CD6427 /* piechart.py */,
 				74BDA989260611A600CD6427 /* savefig.py */,
@@ -231,6 +234,7 @@
 				74BDA981260562A500CD6427 /* sample.py in Resources */,
 				74BDA98A260611A600CD6427 /* savefig.py in Resources */,
 				74BDA9B12608272B00CD6427 /* poisson.py in Resources */,
+				74BDA9D1260BAE5700CD6427 /* stocks.py in Resources */,
 				74BDA9BA26084B4100CD6427 /* mandelbrot.py in Resources */,
 				74BDA98E2606195900CD6427 /* sample2.py in Resources */,
 				74BDA9B72608464F00CD6427 /* julia.py in Resources */,
