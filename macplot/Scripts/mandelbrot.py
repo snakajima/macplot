@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # https://stackoverflow.com/questions/15024461/plot-mandelbrot-with-matplotlib-pyplot-numpy-python
 import numpy as np
-import scipy as sp
 import matplotlib.pyplot as plt
 
 def main():
