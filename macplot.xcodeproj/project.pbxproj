@@ -33,6 +33,7 @@
 		74BDA9C12608EF6900CD6427 /* random.py in Resources */ = {isa = PBXBuildFile; fileRef = 74BDA9C02608EF6900CD6427 /* random.py */; };
 		74BDA9C42608F08500CD6427 /* fern.py in Resources */ = {isa = PBXBuildFile; fileRef = 74BDA9C32608F08500CD6427 /* fern.py */; };
 		74BDA9D1260BAE5700CD6427 /* stocks.py in Resources */ = {isa = PBXBuildFile; fileRef = 74BDA9D0260BAE5700CD6427 /* stocks.py */; };
+		74BDA9DB260C470B00CD6427 /* stocka.py in Resources */ = {isa = PBXBuildFile; fileRef = 74BDA9DA260C470B00CD6427 /* stocka.py */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		74BDA9C62609496C00CD6427 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		74BDA9C72609497400CD6427 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		74BDA9D0260BAE5700CD6427 /* stocks.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = stocks.py; sourceTree = "<group>"; };
+		74BDA9DA260C470B00CD6427 /* stocka.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = stocka.py; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 				74BDA9AA260772A700CD6427 /* salaries.py */,
 				74BDA9AD260799E500CD6427 /* stock.py */,
 				74BDA9D0260BAE5700CD6427 /* stocks.py */,
+				74BDA9DA260C470B00CD6427 /* stocka.py */,
 				74BDA9B02608272B00CD6427 /* poisson.py */,
 				74BDA9A72606E50100CD6427 /* piechart.py */,
 				74BDA989260611A600CD6427 /* savefig.py */,
@@ -223,6 +226,7 @@
 				74BDA9C12608EF6900CD6427 /* random.py in Resources */,
 				74BDA9AB260772A700CD6427 /* salaries.py in Resources */,
 				74BDA9B4260841B300CD6427 /* b-spline.py in Resources */,
+				74BDA9DB260C470B00CD6427 /* stocka.py in Resources */,
 				74BDA96926054F2400CD6427 /* Assets.xcassets in Resources */,
 				74BDA9A22606E05A00CD6427 /* circle.py in Resources */,
 				74BDA9A52606E21400CD6427 /* flower.py in Resources */,
