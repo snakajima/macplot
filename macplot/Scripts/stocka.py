@@ -7,9 +7,10 @@ import datetime
 
 def main():
     symbol = "TSLA"
-    today = (datetime.datetime.utcnow() - datetime.datetime(1970,1,1)).days
     long = 30
     short = 15
+    
+    today = (datetime.datetime.utcnow() - datetime.datetime(1970,1,1)).days
     length = 365 + long
     params = {
         "period1": str((today - length)  * 24 * 60 * 60),
@@ -26,14 +27,12 @@ def main():
     cumsum = np.cumsum(closes)
     averageLong = (cumsum[long:] - cumsum[:-long]) / float(long)
     averageShort = (cumsum[short:] - cumsum[:-short]) / float(short)
-    averageShort = averageShort[(long-short):]
-    closes = closes[long:]
 
-    indeces = np.arange(len(closes))
-    ticks = filter(lambda x: x % (len(closes) / 10) == 0, indeces)
+    indeces = np.arange(len(averageLong))
+    ticks = filter(lambda x: x % (len(averageLong) / 10) == 0, indeces)
     plt.xticks(ticks, map(lambda x: rows[x]["Date"], ticks), rotation=30, ha='right')
-    plt.plot(indeces, closes)
+    plt.plot(indeces, closes[long:])
     plt.plot(indeces, averageLong, label=str(long)+"-day average")
-    plt.plot(indeces, averageShort, label=str(short)+"-day average")
+    plt.plot(indeces, averageShort[(long-short):], label=str(short)+"-day average")
     plt.legend(loc='best')
     plt.title("Historical Stock Price: " + symbol)
