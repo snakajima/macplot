@@ -28,6 +28,8 @@ struct ScriptView: View {
         HStack {
             VStack {
                 TextEditor(text: $pythonScript.script)
+                    .font(.custom("san francisco mono", size: 14))
+                    .lineSpacing(4.0)
                 HStack {
                     Button(action: {
                         pythonScript.run(clear: settings.shouldClear)
@@ -41,6 +43,7 @@ struct ScriptView: View {
                         .foregroundColor(.pink)
                 }
             }
+            .frame(width:540)
             .onAppear {
                 pythonScript.load()
                 pythonScript.run(clear: settings.shouldClear)
